@@ -1,0 +1,42 @@
+\documentclass{article}
+\usepackage{fullpage}
+\usepackage[utf8]{inputenc}
+\usepackage{kotex}
+\usepackage{kotex-logo}
+\usepackage{multicol}
+\usepackage{verse}
+
+\title{This is Title 이게 제목입니다.}
+\author{author here }
+\date{March 2019}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+
+\newcommand{\attrib}[1]{%
+  \nopagebreak{\raggedleft\footnotesize #1\par}}
+  
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+There is a theory which states that if ever anyone discovers exactly what the Universe is for and why it is here, it will instantly disappear and be replaced by something even more bizarre and inexplicable.
+There is another theory which states that this has already happened. 
+
+\subsection{한글파트 서브섹션}
+한글은 못쓰는건가. 이렇게 하면 쓸 수 있는건가.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=1.7]{universe}
+\caption{The Universe}
+\label{fig:universe}
+\end{figure}
+
+\section{Conclusion}
+``I always thought something was fundamentally wrong with the universe'' \citep{adams1995hitchhiker}
+
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}
